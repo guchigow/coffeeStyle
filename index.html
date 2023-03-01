@@ -12,14 +12,14 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-12 logo">
+      <div class="row align-items-center align-content-center justify-content-between">
+        <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-6 col-6 p-0 logo">
           <a href="#">
             <img src="./img/logo.svg" alt="logo">
           </a>
         </div>
-        <nav class="col-xxl-7 col-lg-7 col-md-9 col-sm-12 navigation">
-          <ul class="navigation__list">
+        <nav class="col-xxl-8 col-lg-8 col-md-8 col-sm-12 order-md-0 order-sm-1 p-0 navigation">
+          <ul class="navigation__list-header">
             <li><a href="#">
                 Home
               </a></li>
@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <div class="col-xxl-1 col-lg-1 col-md-1 col-sm-12 cart">
+        <div class="col-xxl-1 col-lg-1 col-md-1 col-sm-1 col-6 cart p-0">
           <div class="cart__img">
             <img src="./img/svg/bag_small.svg" alt="cart">
           </div>
@@ -56,13 +56,13 @@
     </div>
   </header>
   <main>
-    <section class="welcome">
+    <section class="welcome d-flex align-items-center">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center text-center">
           <div class="col-xxl-12">
             <h1>Coffee Mugs</h1>
           </div>
-          <div class="col-xxl-12">
+          <div class="col-xxl-12 order-first">
             <span>Best place to buy design</span>
           </div>
           <div class="col-xxl-12">
@@ -208,7 +208,7 @@
               <div class="col-8">
                 <img class="img-fluid responsive-img" src="./img/magazine_free/1.jpeg" alt="magazine_free-1.jpeg">
               </div>
-              <div class="col-4 d-flex flex-column justify-content-between p-0">
+              <div class="col-4 d-flex flex-column justify-content-between p-1">
                 <img class="img-fluid responsive-img" src="./img/magazine_free/2.jpeg" alt="magazine_free-2.jpeg">
                 <img class="img-fluid responsive-img" src="./img/magazine_free/3.jpeg" alt="magazine_free-3.jpeg">
               </div>
@@ -273,50 +273,55 @@
       </div>
     </section>
 
-    <section class="subscribe">
+    <section class="subscribe d-flex align-items-center">
       <div class="container">
-        <h3>Sign up and get free coffee bags</h3>
-        <span class="subscribe__updates">Coffee Updates</span>
-        <div class="row">
-          <div class="col">
+        <div class="row text-center">
+          <h3 class="col-xxl-12">Sign up and get free coffee bags</h3>
+          <span class="col-xxl-12 subscribe__updates">Coffee Updates</span>
+          <div class="col-xxl-12">
             <input class="subscribe-input" type="text" placeholder="">
-          </div>
-          <div class="col">
             <button class="subscribe__button">subscribe</button>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-xxl-4">
           <img src="./img/logo.svg" alt="logo.svg">
           <p>Delivering the best coffee life since 1996. From coffee geeks to the real ones.</p>
           <span class="add-info">CoffeeStyle Inc. © 1996</span>
         </div>
-        <div class="col">
-          <span class="footer-mini-title">Menu</span>
-          <ul class="menu-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Styleguide</a></li>
-          </ul>
+        <div class="col-xxl-4">
+          <div class="row">
+            <div class="col-6">
+              <span class="footer-mini-title">Menu</span>
+              <nav class="navigation">
+                <ul class="navigation__list-footer">
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">Our Products </a></li>
+                  <li><a href="#">Blog </a></li>
+                  <li><a href="#">About </a></li>
+                  <li><a href="#">Contact </a></li>
+                  <li><a href="#">Styleguide </a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-6">
+              <span class="footer-mini-title">Follow Us</span>
+              <ul class="social-link-list">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <span class="footer-mini-title">Follow Us</span>
-          <ul class="link-list">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Pinterest</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="col">
+        <div class="col-xxl-4">
           <span class="footer-mini-title">Contact Us</span>
           <span>We’re Always Happy to Help</span>
           <a href="mailto:us@coffeestyle.io">us@coffeestyle.io</a>

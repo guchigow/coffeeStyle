@@ -1,0 +1,15 @@
+%transition {
+  transition: all 0.3s;
+}
+
+%list-link {
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  color: $color-link;
+  font-size: 13px;
+  @extend %transition;
+  &:hover {
+    color: $color-text-light;
+    background-color: $color-main;
+  }
+}

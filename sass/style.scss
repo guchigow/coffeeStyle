@@ -1,22 +1,23 @@
 //vendor
-@import "../node_modules/normalize.css/normalize.css";
-@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 //abstracts
+@import "./abstracts/constants";
+@import "./abstracts/placeholders";
 
 //base
-@import "../sass/base/base";
+@import "./base/fonts";
+@import "./base/base";
 
 //components
-@import "../sass/components/header";
-@import "../sass/components/navigation";
-@import "../sass/components/feature-card";
-@import "../sass/components/product-card";
-@import "../sass/components/banner-down";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/welcome";
+@import "./components/feature-card";
+@import "./components/product-card";
+@import "./components/img-banner-down";
+@import "./components/subscribe";
+@import "./components/link-list";
+@import "./components/footer";
 //media
-@import "../sass/media/containers";
-
-body {
-  background-color: #ccc;
-  user-select: none;
-}
+@import "./media/containers";

@@ -1,0 +1,36 @@
+{
+  "name": "coffeestyle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imagemin": "imagemin ./img/* --out-dir=dist/img",
+    "watch": "sass --watch ./sass/style.scss ./sass/style.css",
+    "style": "sass ./sass/style.scss ./sass/style.css",
+    "autoprefixer": "npx postcss ./sass/style.css --use autoprefixer -d ./css",
+    "minify": "css-minify -f css/style.css --output css",
+    "build:css": "npm run style && npm run autoprefixer && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guchigow/coffeeStyle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guchigow/coffeeStyle/issues"
+  },
+  "homepage": "https://github.com/guchigow/coffeeStyle#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.3",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0"
+  },
+  "devDependencies": {
+    "imagemin-cli": "^7.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+.lifestyle {
+  padding-top: 100px;
+  padding-bottom: 152px;
+}
+
+.lifestyle__title {
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 28px;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-text-dark;
+}
+
+.lifestyle__description {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 28px;
+  color: $colot-text-paragraph;
+}
+
+.lifestyle__date {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-text-dark;
+}

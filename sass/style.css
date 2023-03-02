@@ -24,14 +24,14 @@
   unicode-range: U+0020-2044;
 }
 body {
-  font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h3 {
-  text-align: center;
+  font-family: "Karla", Verdana, Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .h3 {
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
   font-size: 13px;
   text-transform: uppercase;
   color: #1d1f2e;
@@ -52,9 +52,28 @@ h3 {
   margin: 0 15px 3px 0;
 }
 
-.responsive-img {
-  max-width: 100%;
-  height: auto;
+.h4 {
+  color: #1d1f2e;
+  padding-top: 35px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.cost {
+  color: rgba(29, 31, 46, 0.7);
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.new-cost {
+  font-size: 19px;
+  line-height: 32px;
+  color: #a25f4b;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: rgba(29, 31, 46, 0.4);
 }
 
 section {
@@ -104,12 +123,51 @@ section {
   background-size: 60%;
 }
 
+.introduce {
+  padding-top: 123px;
+}
+
+.magazine-free {
+  padding-bottom: 130px;
+}
+
 .banner-down {
   min-height: 340px;
   background-image: url("../../img/banners/banner-down.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.lifestyle {
+  padding-top: 100px;
+  padding-bottom: 152px;
+}
+
+.lifestyle__title {
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 28px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1d1f2e;
+}
+
+.lifestyle__description {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(29, 31, 46, 0.7);
+}
+
+.lifestyle__date {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1d1f2e;
 }
 
 .subscribe {

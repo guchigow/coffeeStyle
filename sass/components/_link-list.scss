@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   & a {
-    @extend %list-link;
+    @extend %list-link-style;
     color: $colot-text-paragraph;
   }
 }

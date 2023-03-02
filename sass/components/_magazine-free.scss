@@ -1,3 +1,42 @@
 .magazine-free {
   padding-bottom: 130px;
 }
+
+.magazine-free__subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-text-dark;
+}
+
+.magazine-free__title {
+  font-size: 36px;
+  line-height: 50px;
+  color: $color-text-dark;
+}
+
+.magazine-free__link {
+  display: block;
+  width: 173px;
+  height: 36px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s;
+  text-decoration: none;
+  background-color: $color-text-dark;
+  color: $color-text-light;
+  border: 1px solid $color-text-dark;
+  &:hover {
+    background-color: $color-text-light;
+    color: $color-text-dark;
+  }
+  &:active {
+    background-color: $color-text-dark;
+    color: $color-text-light;
+  }
+}

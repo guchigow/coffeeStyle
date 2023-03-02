@@ -28,6 +28,18 @@ body {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 47px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.h2 {
+  font-size: 28px;
+  line-height: 40px;
+  color: #1d1f2e;
+}
+
 .h3 {
   display: block;
   text-align: center;
@@ -57,6 +69,36 @@ body {
   padding-top: 35px;
   font-size: 20px;
   line-height: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(29, 31, 46, 0.7);
+}
+
+.button {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1d1f2e;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+.button:hover {
+  background-color: #050827;
+  color: #ffffff;
+  border: 1px solid #a25f4b;
+}
+.button:active {
+  color: #a25f4b;
+  background-color: #ffffff;
 }
 
 .cost {
@@ -122,6 +164,11 @@ section {
   background-repeat: no-repeat;
   background-size: 60%;
 }
+.welcome p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #ffffff;
+}
 
 .introduce {
   padding-top: 123px;
@@ -129,6 +176,45 @@ section {
 
 .magazine-free {
   padding-bottom: 130px;
+}
+
+.magazine-free__subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1d1f2e;
+}
+
+.magazine-free__title {
+  font-size: 36px;
+  line-height: 50px;
+  color: #1d1f2e;
+}
+
+.magazine-free__link {
+  display: block;
+  width: 173px;
+  height: 36px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s;
+  text-decoration: none;
+  background-color: #1d1f2e;
+  color: #ffffff;
+  border: 1px solid #1d1f2e;
+}
+.magazine-free__link:hover {
+  background-color: #ffffff;
+  color: #1d1f2e;
+}
+.magazine-free__link:active {
+  background-color: #1d1f2e;
+  color: #ffffff;
 }
 
 .banner-down {
@@ -156,9 +242,6 @@ section {
 .lifestyle__description {
   display: block;
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 28px;
-  color: rgba(29, 31, 46, 0.7);
 }
 
 .lifestyle__date {
@@ -175,6 +258,45 @@ section {
   min-height: 327px;
   background-color: #050827;
   color: #ffffff;
+}
+.subscribe .h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.subscribe .h3::after, .subscribe .h3::before {
+  background-color: rgba(210, 210, 213, 0.1);
+}
+.subscribe__subtitle {
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.subscribe__form {
+  height: 54px;
+}
+@media (max-width: 768px) {
+  .subscribe__form {
+    height: 110px;
+  }
+}
+.subscribe__input {
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #050827;
+  text-align: center;
+  border: 1px solid #2f303e;
+  outline: none;
+}
+.subscribe__input::placeholder {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2901960784);
+}
+.subscribe__input:focus-visible {
+  border: 1px solid #a25f4b;
 }
 
 .social-link-list {

@@ -2,6 +2,17 @@ body {
   font-family: "Karla", Verdana, Tahoma, sans-serif;
   font-weight: 400;
 }
+h1 {
+  font-size: 47px;
+  line-height: 60px;
+  color: $color-text-light;
+}
+
+.h2 {
+  font-size: 28px;
+  line-height: 40px;
+  color: $color-text-dark;
+}
 
 .h3 {
   display: block;
@@ -33,6 +44,36 @@ body {
   padding-top: 35px;
   font-size: 20px;
   line-height: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  color: $colot-text-paragraph;
+}
+
+.button {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-text-dark;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: $color-main;
+    color: $color-text-light;
+    border: 1px solid $color-text-new-cost;
+  }
+  &:active {
+    color: $color-text-new-cost;
+    background-color: #ffffff;
+  }
 }
 
 .cost {

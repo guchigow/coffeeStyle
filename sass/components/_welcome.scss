@@ -7,4 +7,9 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 60%;
+  & p {
+    font-size: 17px;
+    line-height: 30px;
+    color: $color-text-light;
+  }
 }

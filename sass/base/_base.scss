@@ -2,6 +2,32 @@ body {
   font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3 {
+  text-align: center;
+}
+
+.h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $color-text-dark;
+  line-height: 18px;
+  letter-spacing: 2px;
+  &::after,
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: #ececed;
+    width: 30px;
+  }
+  &::after {
+    margin: 0 0 3px 15px;
+  }
+  &::before {
+    margin: 0 15px 3px 0;
+  }
+}
+
 .responsive-img {
   max-width: 100%;
   height: auto;

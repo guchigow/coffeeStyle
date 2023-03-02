@@ -4,6 +4,6 @@
   margin: 0;
   & a {
     @extend %list-link;
-    color: $color-link-list;
+    color: $colot-text-paragraph;
   }
 }

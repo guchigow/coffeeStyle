@@ -27,6 +27,31 @@ body {
   font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3 {
+  text-align: center;
+}
+
+.h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #1d1f2e;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+.h3::after, .h3::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: #ececed;
+  width: 30px;
+}
+.h3::after {
+  margin: 0 0 3px 15px;
+}
+.h3::before {
+  margin: 0 15px 3px 0;
+}
+
 .responsive-img {
   max-width: 100%;
   height: auto;

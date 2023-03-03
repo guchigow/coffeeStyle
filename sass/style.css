@@ -1,4 +1,4 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../css/bootstrap.min.css";
 .social-link-list a, .nav-list a {
   transition: all 0.3s;
 }

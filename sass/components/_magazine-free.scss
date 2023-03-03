@@ -6,6 +6,22 @@
   }
 }
 
+.magazine-free__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 80px;
+  @media (max-width: 992px) {
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    padding-left: 80px;
+    padding-left: 15px;
+    align-items: center;
+  }
+}
+
 .magazine-free__subtitle {
   font-size: 12px;
   line-height: 18px;
@@ -18,6 +34,9 @@
   font-size: 36px;
   line-height: 50px;
   color: $color-text-dark;
+  @media (max-width: 991px) {
+    font-size: 26px;
+  }
 }
 
 .magazine-free__link {

@@ -19,8 +19,8 @@
   }
   &__form {
     height: 54px;
-    @media (max-width: 768px) {
-      height: 110px;
+    @media (max-width: 767px) {
+      height: 115px;
     }
   }
   &__input {

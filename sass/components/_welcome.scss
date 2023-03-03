@@ -18,4 +18,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+  @media (max-width: 767px) {
+    min-height: 430px;
+    background-size: 900px;
+  }
 }

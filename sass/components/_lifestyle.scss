@@ -1,6 +1,9 @@
 .lifestyle {
   padding-top: 100px;
   padding-bottom: 152px;
+  @media (max-width: 767px) {
+    padding: 75px 0 50px 0;
+  }
 }
 
 .lifestyle__title {
@@ -10,6 +13,9 @@
   font-size: 20px;
   line-height: 32px;
   color: $color-text-dark;
+  @media (max-width: 767px) {
+    padding-top: 10px;
+  }
 }
 
 .lifestyle__description {

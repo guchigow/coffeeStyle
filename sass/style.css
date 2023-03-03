@@ -63,12 +63,30 @@ h1 {
 .h3::before {
   margin: 0 15px 3px 0;
 }
+@media (max-width: 767px) {
+  .h3 {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .h3::after {
+    margin: 0 0 3px 5px;
+  }
+  .h3::before {
+    margin: 0 5px 3px 0;
+  }
+}
 
 .h4 {
   color: #1d1f2e;
   padding-top: 35px;
   font-size: 20px;
   line-height: 30px;
+}
+@media (max-width: 767px) {
+  .h4 {
+    padding-top: 10px;
+  }
 }
 
 p {
@@ -123,6 +141,11 @@ p {
 section {
   padding: 50px 0 50px 0;
 }
+@media (max-width: 767px) {
+  section {
+    padding: 25px 0 25px 0;
+  }
+}
 
 .header {
   padding-top: 28px;
@@ -135,6 +158,12 @@ section {
   justify-content: space-between;
 }
 
+@media (max-width: 992px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation__list-header {
   display: flex;
   list-style: none;
@@ -144,12 +173,11 @@ section {
 }
 @media (max-width: 992px) {
   .navigation__list-header {
-    display: none;
     flex-direction: column;
-    background-color: red;
     gap: 10px;
   }
 }
+
 .welcome {
   padding: 0;
   min-height: 530px;
@@ -158,7 +186,7 @@ section {
   background-image: url("../../img/banners/banner-top.jpeg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 1100px;
 }
 .welcome p {
   font-size: 17px;
@@ -168,6 +196,11 @@ section {
 
 .introduce {
   padding-top: 123px;
+}
+@media (max-width: 767px) {
+  .introduce {
+    padding-top: 50px;
+  }
 }
 
 .introduce__link {
@@ -190,8 +223,20 @@ section {
   border-bottom: 2px solid #a25f4b;
 }
 
+@media (max-width: 767px) {
+  .more-products {
+    padding-bottom: 0;
+  }
+}
+
 .magazine-free {
   padding-bottom: 130px;
+}
+@media (max-width: 767px) {
+  .magazine-free {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
 }
 
 .magazine-free__subtitle {
@@ -247,6 +292,11 @@ section {
   padding-top: 100px;
   padding-bottom: 152px;
 }
+@media (max-width: 767px) {
+  .lifestyle {
+    padding: 75px 0 50px 0;
+  }
+}
 
 .lifestyle__title {
   display: block;
@@ -255,6 +305,11 @@ section {
   font-size: 20px;
   line-height: 32px;
   color: #1d1f2e;
+}
+@media (max-width: 767px) {
+  .lifestyle__title {
+    padding-top: 10px;
+  }
 }
 
 .lifestyle__description {
@@ -328,6 +383,11 @@ section {
 
 .footer {
   padding: 100px 0 48px 0;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 50px 0 25px 0;
+  }
 }
 
 .footer-mini-title {

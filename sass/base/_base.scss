@@ -37,6 +37,17 @@ h1 {
   &::before {
     margin: 0 15px 3px 0;
   }
+  @media (max-width: 767px) {
+    margin-bottom: 35px;
+  }
+  @media (max-width: 576px) {
+    &::after {
+      margin: 0 0 3px 5px;
+    }
+    &::before {
+      margin: 0 5px 3px 0;
+    }
+  }
 }
 
 .h4 {
@@ -44,6 +55,9 @@ h1 {
   padding-top: 35px;
   font-size: 20px;
   line-height: 30px;
+  @media (max-width: 767px) {
+    padding-top: 10px;
+  }
 }
 
 p {
@@ -97,4 +111,7 @@ p {
 
 section {
   padding: 50px 0 50px 0;
+  @media (max-width: 767px) {
+    padding: 25px 0 25px 0;
+  }
 }

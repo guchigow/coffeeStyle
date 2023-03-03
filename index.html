@@ -16,8 +16,8 @@
         <a class="col logo" href="#">
           <img src="./img/logo.svg" alt="logo">
         </a>
-        <nav class="col-8 navigation">
-          <ul class="navigation__list-header">
+        <nav class="col-8 navigation-header">
+          <ul class="nav-list nav-list-header">
             <li><a href="#">Home</a></li>
             <li><a href="#">Our Products</a></li>
             <li><a href="#">Blog</a></li>
@@ -280,9 +280,9 @@
           <span class="col-12 subscribe__subtitle">Coffee Updates</span>
           <div class="col-12">
             <div class="row justify-content-center subscribe__form">
-              <input class="col-12 col-md-6 mb-2 mb-md-0 me-md-2 subscribe__input" type="text"
+              <input class="col-12 col-sm-7 col-md-6 mb-2 mb-md-0 me-md-2 subscribe__input" type="text"
                 placeholder="customer @coffestyle.io">
-              <button class="col-12 col-md-2 button">subscribe</button>
+              <button class="col-12 col-sm-7 col-md-2 button">subscribe</button>
             </div>
           </div>
         </div>
@@ -291,18 +291,19 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-xxl-4">
-          <img src="./img/logo.svg" alt="logo.svg">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-sm-4 order-3 order-sm-1
+          d-sm-flex flex-column justify-content-between justify-content-md-start">
+          <img class="logo-footer pt-2" src="./img/logo.svg" alt="logo.svg">
           <p>Delivering the best coffee life since 1996. From coffee geeks to the real ones.</p>
-          <span class="add-info">CoffeeStyle Inc. © 1996</span>
+          <span class="add-info mt-md-auto">CoffeeStyle Inc. © 1996</span>
         </div>
-        <div class="col-xxl-4">
+        <div class="col-12 col-sm-4 order-1 order-sm-2 pb-4">
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 text-end text-sm-center text-md-start pe-0">
               <span class="footer-mini-title">Menu</span>
-              <nav class="navigation">
-                <ul class="navigation__list-footer">
+              <nav class="navigation-footer">
+                <ul class="nav-list nav-list-footer">
                   <li><a href="#">Home </a></li>
                   <li><a href="#">Our Products </a></li>
                   <li><a href="#">Blog </a></li>
@@ -312,7 +313,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-6">
+            <div class="col-6 text-start text-sm-center text-md-start ps-0">
               <span class="footer-mini-title">Follow Us</span>
               <ul class="social-link-list">
                 <li><a href="#">Facebook</a></li>
@@ -324,11 +325,12 @@
             </div>
           </div>
         </div>
-        <div class="col-xxl-4">
+        <div
+          class="col-12 col-sm-4 order-2 order-sm-3 d-sm-flex flex-column justify-content-between justify-content-md-start">
           <span class="footer-mini-title">Contact Us</span>
-          <span>We’re Always Happy to Help</span>
-          <a href="mailto:us@coffeestyle.io">us@coffeestyle.io</a>
-          <span class="add-info">Powered by Webflow</span>
+          <p>We’re Always Happy to Help</p>
+          <a class="footer-link" href="mailto:us@coffeestyle.io">us@coffeestyle.io</a>
+          <div class="add-info mt-md-auto">Powered by Webflow</div>
         </div>
       </div>
     </div>

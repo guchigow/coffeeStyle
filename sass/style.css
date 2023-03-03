@@ -1,15 +1,15 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-.social-link-list a, .navigation__list-header a {
+.social-link-list a, .nav-list a {
   transition: all 0.3s;
 }
 
-.social-link-list a, .navigation__list-header a {
+.social-link-list a, .nav-list a {
   padding: 5px 10px 5px 10px;
   text-decoration: none;
   color: #1d1f2e;
   font-size: 13px;
 }
-.social-link-list a:hover, .navigation__list-header a:hover {
+.social-link-list a:hover, .nav-list a:hover {
   color: #ffffff;
   background-color: #050827;
 }
@@ -161,23 +161,32 @@ section {
 }
 
 @media (max-width: 992px) {
-  .navigation {
+  .navigation-header {
     display: none;
   }
 }
 
-.navigation__list-header {
+.nav-list {
   display: flex;
   list-style: none;
-  gap: 30px;
   margin: 0;
   padding: 0;
 }
+.nav-list-header {
+  gap: 30px;
+}
 @media (max-width: 992px) {
-  .navigation__list-header {
+  .nav-list-header {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+.nav-list-footer {
+  flex-direction: column;
+}
+.nav-list-footer a {
+  color: rgba(29, 31, 46, 0.7);
 }
 
 .welcome {
@@ -465,6 +474,39 @@ section {
   line-height: 18px;
   color: #1d1f2e;
   letter-spacing: 2px;
+}
+@media (max-width: 767px) {
+  .footer-mini-title {
+    margin-bottom: 10px;
+  }
+}
+
+.logo-footer {
+  max-width: 111px;
+  margin-bottom: 22px;
+}
+@media (max-width: 767px) {
+  .logo-footer {
+    margin-bottom: 10px;
+  }
+}
+
+.add-info {
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(29, 31, 46, 0.3);
+}
+
+.footer-link {
+  display: block;
+  font-size: 23px;
+  line-height: 36px;
+  color: #1d1f2e;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer-link:hover, .footer-link:focus {
+  color: #a25f4b;
 }
 
 @media (min-width: 1440px) {

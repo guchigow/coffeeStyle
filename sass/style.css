@@ -161,8 +161,33 @@ section {
 }
 
 @media (max-width: 992px) {
+  .header .hamburger {
+    display: block;
+    position: relative;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 992px) {
   .navigation-header {
-    display: none;
+    text-align: center;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -500px;
+    left: 0;
+    background: #ffffff;
+    padding: 100px 20px 0px 20px;
+    width: 150%;
+    height: 380px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: end;
+  }
+  .navigation-header a {
+    font-size: 23px;
+    color: #050827;
   }
 }
 
@@ -187,6 +212,98 @@ section {
 }
 .nav-list-footer a {
   color: rgba(29, 31, 46, 0.7);
+}
+
+.hamburger__bottom,
+.hamburger__top,
+.hamburger::after,
+.hamburger::before {
+  display: inline-block;
+  content: "";
+  background: #050827;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  top: -3px;
+  width: 40px;
+  height: 26px;
+  border: none;
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+
+.hamburger::before {
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+}
+
+.hamburger::after {
+  bottom: 0;
+  left: 0;
+  transition: 0.2s;
+}
+
+.hamburger__top {
+  top: calc(25% + 2px);
+  left: 0;
+  transition: 0.2s;
+}
+
+.hamburger__bottom {
+  bottom: calc(25% + 1px);
+  left: 0;
+  transition: 0.2s;
+}
+
+.hamburger__top {
+  transition: 0.3s linear;
+  top: calc(25% + 2px);
+  left: 0;
+}
+
+.hamburger__bottom {
+  transition: 0.3s linear;
+  bottom: calc(25% + 1px);
+  left: 0;
+}
+
+.header.open .hamburger {
+  background-color: #ffffff;
+}
+
+.header.open .hamburger__top {
+  transform: rotate(-45deg);
+  top: 50%;
+  opacity: 0;
+}
+
+.header.open .hamburger__bottom {
+  transform: rotate(45deg);
+  top: 50%;
+  opacity: 0;
+}
+
+.header.open .hamburger::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.header.open .hamburger::after {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+.header.open .navigation-header {
+  transform: translateY(500px);
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .welcome {

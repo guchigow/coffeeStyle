@@ -13,17 +13,25 @@
   <header class="header">
     <div class="container">
       <div class="row justify-content-between align-items-center">
-        <a class="col logo" href="#">
-          <img src="./img/logo.svg" alt="logo">
-        </a>
+        <div class="col d-flex">
+          <a class="logo" href="#">
+            <img src="./img/logo.svg" alt="logo">
+          </a>
+          <div class="ps-2 header__hamburger">
+            <button class="hamburger">
+              <span class="hamburger__top"></span>
+              <span class="hamburger__bottom"></span>
+            </button>
+          </div>
+        </div>
         <nav class="col-8 navigation-header">
           <ul class="nav-list nav-list-header">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Products</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Styleguide</a></li>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li><a href="#introduce">Blog</a></li>
+            <li><a href="#lifestyle">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#mugs">Styleguide</a></li>
           </ul>
         </nav>
         <div class="col d-flex justify-content-end">
@@ -41,7 +49,7 @@
     </div>
   </header>
   <main>
-    <section class="welcome d-flex align-items-center">
+    <section class="welcome d-flex align-items-center" id="welcome">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-xxl-12">
@@ -65,7 +73,7 @@
       </div>
     </section>
 
-    <section class="introduce">
+    <section class="introduce" id="introduce">
       <div class="container">
         <div class="row text-center justify-content-center">
           <div class="col-12">
@@ -98,7 +106,7 @@
       </div>
     </section>
 
-    <section class="featured-mugs">
+    <section class="featured-mugs" id="mugs">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -132,7 +140,7 @@
       </div>
     </section>
 
-    <section class="more-products">
+    <section class="more-products" id="products">
       <div class="container">
         <h3><span class="h3">More Products</span></h3>
         <div class="row">
@@ -208,7 +216,7 @@
       </div>
     </section>
 
-    <section class="magazine-free">
+    <section class="magazine-free" id="">
       <div class="container">
         <h3><span class="h3">Buy 2 mugs and get a coffee magazine free</span></h3>
         <div class="row flex-column-reverse flex-lg-row">
@@ -237,7 +245,7 @@
 
     </section>
 
-    <section class="lifestyle">
+    <section class="lifestyle" id="lifestyle">
       <div class="container">
         <h3><span class="h3">Behind the mugs, lifestyle stories</span></h3>
 
@@ -294,7 +302,7 @@
       </div>
     </section>
 
-    <section class="subscribe d-flex align-items-center">
+    <section class="subscribe d-flex align-items-center" id="subscribe">
       <div class="container">
         <div class="row text-center">
           <h3 class="col-12">
@@ -348,7 +356,7 @@
             </div>
           </div>
         </div>
-        <div
+        <div id="contact"
           class="col-12 col-sm-4 order-2 order-sm-3 pb-4 pb-md-0 d-sm-flex flex-column justify-content-between justify-content-md-start">
           <span class="footer-mini-title">Contact Us</span>
           <p>We’re Always Happy to Help</p>
@@ -358,6 +366,7 @@
       </div>
     </div>
   </footer>
+  <script src="./custom.js"></script>
 </body>
 
 </html>

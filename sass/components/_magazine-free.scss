@@ -17,13 +17,15 @@
 }
 
 .magazine-free__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 173px;
   height: 36px;
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 35px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   transition: all 0.3s;

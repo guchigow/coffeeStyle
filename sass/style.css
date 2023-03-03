@@ -1,15 +1,15 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-.social-link-list a, .navigation > ul a {
+.social-link-list a, .navigation__list-header a {
   transition: all 0.3s;
 }
 
-.social-link-list a, .navigation > ul a {
+.social-link-list a, .navigation__list-header a {
   padding: 5px 10px 5px 10px;
   text-decoration: none;
   color: #1d1f2e;
   font-size: 13px;
 }
-.social-link-list a:hover, .navigation > ul a:hover {
+.social-link-list a:hover, .navigation__list-header a:hover {
   color: #ffffff;
   background-color: #050827;
 }
@@ -79,7 +79,9 @@ p {
 
 .button {
   font-size: 12px;
-  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -133,27 +135,21 @@ section {
   justify-content: space-between;
 }
 
-.navigation > ul {
+.navigation__list-header {
   display: flex;
   list-style: none;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
-.navigation__list-header {
-  gap: 30px;
-}
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .navigation__list-header {
-    flex-direction: column;
-    gap: 10px;
     display: none;
+    flex-direction: column;
+    background-color: red;
+    gap: 10px;
   }
 }
-.navigation__list-footer {
-  flex-direction: column;
-  gap: 10px;
-}
-
 .welcome {
   padding: 0;
   min-height: 530px;
@@ -172,6 +168,26 @@ section {
 
 .introduce {
   padding-top: 123px;
+}
+
+.introduce__link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 2px solid #a25f4b;
+  color: #a25f4b;
+  transition: all 0.3s;
+}
+.introduce__link:hover {
+  color: #050827;
+  border-bottom: 2px solid #050827;
+}
+.introduce__link:active {
+  color: #a25f4b;
+  border-bottom: 2px solid #a25f4b;
 }
 
 .magazine-free {
@@ -193,13 +209,15 @@ section {
 }
 
 .magazine-free__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 173px;
   height: 36px;
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 35px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   transition: all 0.3s;

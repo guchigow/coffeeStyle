@@ -12,43 +12,28 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="row align-items-center align-content-center justify-content-between">
-        <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-6 col-6 p-0 logo">
-          <a href="#">
-            <img src="./img/logo.svg" alt="logo">
-          </a>
-        </div>
-        <nav class="col-xxl-8 col-lg-8 col-md-8 col-sm-12 order-md-0 order-sm-1 p-0 navigation">
+      <div class="row justify-content-between">
+        <a class="col logo" href="#">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <nav class="col-8 navigation">
           <ul class="navigation__list-header">
-            <li><a href="#">
-                Home
-              </a></li>
-            <li><a href="#">
-                Our Products
-              </a></li>
-            <li><a href="#">
-                Blog
-              </a></li>
-            <li><a href="#">
-                About
-              </a></li>
-            <li><a href="#">
-                Contact
-              </a></li>
-            <li><a href="#">
-                Styleguide
-              </a>
-            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Styleguide</a></li>
           </ul>
         </nav>
-        <div class="col-xxl-1 col-lg-1 col-md-1 col-sm-1 col-6 cart p-0">
-          <div class="cart__img">
+        <div class="col d-flex justify-content-center">
+          <div class="cart__img p-1">
             <img src="./img/svg/bag_small.svg" alt="cart">
           </div>
-          <span class="cart__text">
+          <span class="cart__text p-1">
             Cart
           </span>
-          <span class="cart__count">
+          <span class="cart__count p-1">
             0
           </span>
         </div>
@@ -69,7 +54,7 @@
             <p>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
           </div>
           <div class="col-xxl-12">
-            <button class="button px-4">Explore Our Products</button>
+            <button class="button px-4 mx-auto">Explore Our Products</button>
           </div>
         </div>
       </div>
@@ -77,19 +62,32 @@
 
     <section class="introduce">
       <div class="container">
-        <div class="row text-center w-75 mx-auto">
-          <div class="col-xxl-12">
-            <h2 class="h2">Even the all-powerful Pointing has no control about the blind texts.</h2>
+        <div class="row text-center justify-content-center">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-12">
+            <div class="row justify-content-center">
+              <h2 class="col-xxl-8 col-lg-9 col-md-12 col-sm-12 col-12 h2">
+                Even the all-powerful Pointing has no control about the blind texts.
+              </h2>
+            </div>
           </div>
-          <div class="col-xxl-12">
-            <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the
-              all-powerful
-              Pointing has no control about the blind texts it is an almost unorthographic life One day however a small
-              line
-              of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="col-xxl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the
+                  all-powerful
+                  Pointing has no control about the blind texts it is an almost unorthographic life One day however a
+                  small
+                  line
+                  of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-xxl-12">
-            <a href="#">Read the full Story</a>
+          <div class="col-xxl-9 col-lg-9 col-md-12 col-sm-12 col-12 pt-3">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <a class="introduce__link" href="#">Read the full Story</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -104,12 +102,12 @@
         </div>
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 col-12 pb-md-0 pb-sm-5 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/featured_mugs/1.jpg" alt="featured-mugs-1.jpeg">
             <h4 class="text-center h4">Pink Premium Ceramic</h4>
             <div class="cost text-center"><span>$ 99.00 USD</span></div>
           </div>
-          <div class="col-6">
+          <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 col-12 pb-md-0 pb-sm-5 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/featured_mugs/2.jpg" alt="featured-mugs-2.jpeg">
             <h4 class="text-center h4">Golden Designers Mug</h4>
             <div class="cost text-center">
@@ -125,7 +123,7 @@
       <div class="container">
         <h3><span class="h3">More Products</span></h3>
         <div class="row">
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/1.jpeg" alt="more-products-01.jpeg">
             <h4 class="text-center h4">Red Love Cup</h4>
             <div class="cost">
@@ -133,7 +131,7 @@
               <span class="strikethrough">$ 37.00 USD</span>
             </div>
           </div>
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/2.jpeg" alt="more-products-02.jpeg">
             <h4 class="h4">Black Tea Cup</h4>
             <div class="cost">
@@ -141,7 +139,7 @@
               <span class="strikethrough">$ 29.00 USD</span>
             </div>
           </div>
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/3.jpeg" alt="more-products-03.jpeg">
             <h4 class="h4">B&W Essentials Mug</h4>
             <div class="cost">
@@ -150,21 +148,21 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/4.jpeg" alt="more-products-04.jpeg">
             <h4 class="h4">Winter Style Mug</h4>
             <div class="cost">
               <span>$ 25.00 USD</span>
             </div>
           </div>
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/5.jpeg" alt="more-products-05.jpeg">
             <h4 class="h4">Ceramic Tea</h4>
             <div class="cost">
               <span>$ 46.00 USD</span>
             </div>
           </div>
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/6.jpeg" alt="more-products-06.jpeg">
             <h4 class="h4">No Handle Bar Cup</h4>
             <div class="cost">
@@ -174,21 +172,21 @@
         </div>
 
         <div class="row">
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/7.jpeg" alt="more-products-07.jpeg">
             <h4 class="h4">Espresso Cup by Mugs.co</h4>
             <div class="cost">
               <span>$ 25.00 USD</span>
             </div>
           </div>
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/8.jpeg" alt="more-products-08.jpeg">
             <h4 class="h4">Pink Premium Ceramic</h4>
             <div class="cost">
               <span>$ 99.00 USD</span>
             </div>
           </div>
-          <div class="col-4 text-center p-2 pb-5">
+          <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center p-2 pb-5">
             <img class="img-fluid mx-auto d-block" src="./img/more_products/9.jpeg" alt="more-products-09.jpeg">
             <h4 class="h4">Summer Designer Cup</h4>
             <div class="cost">
@@ -233,8 +231,7 @@
         <h3><span class="h3">Behind the mugs, lifestyle stories</span></h3>
 
         <div class="row">
-
-          <div class="col-4 p-1">
+          <div class="d-flex flex-column col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 p-1 pb-5">
             <img class="img-fluid" src="./img/lifestyle_stories/1.jpg" alt="lifestyle_stories-1.jpg">
             <span class="lifestyle__title pe-2">
               Health Check: why do I get a headache when I haven’t had my
@@ -246,8 +243,7 @@
             </p>
             <span class="lifestyle__date">October 9, 2018</span>
           </div>
-
-          <div class="col-4 p-1">
+          <div class="d-flex flex-column col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 p-1 pb-5">
             <img class="img-fluid" src="./img/lifestyle_stories/2.jpg" alt="lifestyle_stories-2.jpg">
             <span class="lifestyle__title pe-2">
               How long does a cup of coffee keep you awake?
@@ -257,9 +253,7 @@
             </p>
             <span class="lifestyle__date">October 9, 2018</span>
           </div>
-
-
-          <div class="col-4 p-1">
+          <div class="d-flex flex-column col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 p-1 pb-5">
             <img class="img-fluid" src="./img/lifestyle_stories/3.jpg" alt="lifestyle_stories-3.jpg">
             <span class="lifestyle__title pe-2">
               Recent research suggests that heavy coffee drinkers may reap health benefits.

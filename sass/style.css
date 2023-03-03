@@ -311,7 +311,7 @@ section {
   min-height: 530px;
   background-color: #050827;
   color: #ffffff;
-  background-image: url("../../img/banners/banner-top.jpeg");
+  background-image: url("../img/banners/banner-top.jpeg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 1000px;
@@ -447,7 +447,7 @@ section {
 
 .banner-down {
   min-height: 340px;
-  background-image: url("../../img/banners/banner-down.jpeg");
+  background-image: url("../img/banners/banner-down.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

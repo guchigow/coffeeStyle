@@ -37,8 +37,12 @@
       text-transform: uppercase;
       color: #ffffff4a;
     }
+    &:focus,
     &:focus-visible {
       border: 1px solid $color-text-new-cost;
+      &::placeholder {
+        color: transparent;
+      }
     }
   }
 }

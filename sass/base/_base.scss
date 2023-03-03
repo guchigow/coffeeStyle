@@ -15,7 +15,9 @@ h1 {
 }
 
 .h3 {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 100px;
   font-size: 13px;
@@ -42,10 +44,10 @@ h1 {
   }
   @media (max-width: 576px) {
     &::after {
-      margin: 0 0 3px 5px;
+      margin: 0 0 3px 3px;
     }
     &::before {
-      margin: 0 5px 3px 0;
+      margin: 0 3px 3px 0;
     }
   }
 }
@@ -81,8 +83,10 @@ p {
   box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
   transition: all 0.3s;
   border: 1px solid transparent;
-  &:hover {
-    background-color: $color-main;
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: #050827bb;
     color: $color-text-light;
     border: 1px solid $color-text-new-cost;
   }

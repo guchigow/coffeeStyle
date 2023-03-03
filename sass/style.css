@@ -41,7 +41,9 @@ h1 {
 }
 
 .h3 {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 100px;
   font-size: 13px;
@@ -70,10 +72,10 @@ h1 {
 }
 @media (max-width: 576px) {
   .h3::after {
-    margin: 0 0 3px 5px;
+    margin: 0 0 3px 3px;
   }
   .h3::before {
-    margin: 0 5px 3px 0;
+    margin: 0 3px 3px 0;
   }
 }
 
@@ -111,8 +113,8 @@ p {
   transition: all 0.3s;
   border: 1px solid transparent;
 }
-.button:hover {
-  background-color: #050827;
+.button:hover, .button:focus, .button:focus-visible {
+  background-color: rgba(5, 8, 39, 0.7333333333);
   color: #ffffff;
   border: 1px solid #a25f4b;
 }
@@ -186,12 +188,18 @@ section {
   background-image: url("../../img/banners/banner-top.jpeg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 1100px;
+  background-size: 1000px;
 }
 .welcome p {
   font-size: 17px;
   line-height: 30px;
   color: #ffffff;
+}
+.welcome__subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .introduce {
@@ -235,7 +243,7 @@ section {
 @media (max-width: 767px) {
   .magazine-free {
     padding-top: 0;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
   }
 }
 
@@ -287,6 +295,16 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (max-width: 991px) {
+  .banner-down {
+    min-height: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-down {
+    min-height: 150px;
+  }
+}
 
 .lifestyle {
   padding-top: 100px;
@@ -294,7 +312,7 @@ section {
 }
 @media (max-width: 767px) {
   .lifestyle {
-    padding: 75px 0 50px 0;
+    padding: 75px 0 25px 0;
   }
 }
 
@@ -306,15 +324,29 @@ section {
   line-height: 32px;
   color: #1d1f2e;
 }
+@media (max-width: 991px) {
+  .lifestyle__title {
+    font-size: 18px;
+  }
+}
 @media (max-width: 767px) {
   .lifestyle__title {
     padding-top: 10px;
+    text-align: center;
+    margin-bottom: 5px;
   }
 }
 
 .lifestyle__description {
   display: block;
+  font-size: 16px;
   margin-bottom: 16px;
+}
+@media (max-width: 991px) {
+  .lifestyle__description {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
 }
 
 .lifestyle__date {
@@ -368,8 +400,11 @@ section {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.2901960784);
 }
-.subscribe__input:focus-visible {
+.subscribe__input:focus, .subscribe__input:focus-visible {
   border: 1px solid #a25f4b;
+}
+.subscribe__input:focus::placeholder, .subscribe__input:focus-visible::placeholder {
+  color: transparent;
 }
 
 .social-link-list {
